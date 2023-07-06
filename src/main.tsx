@@ -12,7 +12,11 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <div>Something went wrong...</div>,
+    errorElement: (
+      <div className="fs-5 font-weight-bold text-center mt-5">
+        Something went wrong...
+      </div>
+    ),
     children: [
       {
         index: true,

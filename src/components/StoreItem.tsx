@@ -53,7 +53,7 @@ const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
                 <Button onClick={() => increaseCartQuantity(id)}>+</Button>
               </div>
               <Button
-                onClick={() => decreaseCartQuantity(id)}
+                onClick={() => removeFromCart(id)}
                 variant="danger"
                 size="sm"
               >
